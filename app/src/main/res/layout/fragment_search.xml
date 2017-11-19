@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autometer.myapp.autometer.SearchFragment">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="From:"
+        android:id="@+id/from"
+        android:layout_marginTop="83dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <AutoCompleteTextView
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/autoComplete1"
+        android:hint="@string/hint_text"
+        android:completionThreshold="3"
+        android:layout_alignBottom="@+id/from"
+        android:layout_toRightOf="@+id/from"
+        android:layout_toEndOf="@+id/from"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:imeOptions="actionNext"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To:"
+        android:id="@+id/to"
+
+        android:layout_marginTop="32dp"
+        android:layout_toStartOf="@+id/autoComplete1"
+        android:layout_below="@+id/from"
+        android:layout_toLeftOf="@+id/autoComplete1" />
+
+    <AutoCompleteTextView
+        android:layout_width="260dip"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/autoComplete2"
+        android:hint="@string/hint_text"
+        android:completionThreshold="3"
+        android:layout_toEndOf="@+id/to"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+
+        android:layout_alignBottom="@+id/to"
+        android:layout_toRightOf="@+id/to" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/Cur_button"
+        android:background="@android:drawable/ic_menu_mylocation"
+        android:layout_alignBottom="@+id/autoComplete1"
+        android:layout_toRightOf="@+id/autoComplete1"
+        android:layout_toEndOf="@+id/autoComplete1" />
+
+    <com.autometer.myapp.autometer.CircleButton
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/tick"
+        tools:cb_color="#388E8E"
+        tools:cb_pressedRingWidth="8dip"
+        android:id="@+id/search_btn"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/autoComplete2"
+        android:layout_alignRight="@+id/autoComplete2"
+        android:layout_alignEnd="@+id/autoComplete2" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night fare"
+        android:id="@+id/NightFare"
+        android:checked="false"
+        android:layout_alignTop="@+id/search_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:text="City: Bangalore"
+        android:textSize="@dimen/abc_action_bar_subtitle_text_size"
+        android:layout_alignTop="@+id/search_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change city"
+        android:id="@+id/citychange"
+        android:layout_toStartOf="@+id/NightFare"
+        android:layout_toLeftOf="@+id/NightFare"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:textSize="10dp"
+        android:background="#5F9EA0"
+        android:alpha="70"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/city"
+        android:layout_alignRight="@+id/city"
+        android:layout_alignEnd="@+id/city"
+        android:layout_alignBottom="@+id/NightFare" />
+
+</RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autometer.myapp.autometer.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your City"
+            android:id="@+id/tvlabel1"
+            android:layout_marginTop="60dp"
+            android:textSize="18dip"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/cities"
+            android:layout_below="@+id/tvlabel1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Banglore"
+                android:id="@+id/BLR"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mumbai"
+                android:id="@+id/MUM"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delhi"
+                android:id="@+id/DEL"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chennai"
+                android:id="@+id/CHE"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hydrabad"
+                android:id="@+id/HYD"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kolkata"
+                android:id="@+id/KOL"
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:id="@+id/OTH"
+                android:checked="false"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+</FrameLayout>

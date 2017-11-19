@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start"
+    tools:context="com.autometer.myapp.autometer.StartActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <TextView
+        android:layout_width="189dp"
+        android:layout_height="84dp"
+        android:text="Taxi Fare"
+        android:id="@+id/startLogo"
+        android:layout_gravity="center"
+        android:textSize="32dip" />
+</FrameLayout>

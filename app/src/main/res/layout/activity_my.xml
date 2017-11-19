@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            style="@style/PagerTabStripText"
+            />
+
+    </android.support.v4.view.ViewPager>
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="com.autometer.myapp.autometer.MyActivity$AdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <fragment android:name="com.autometer.myapp.autometer.MyActivity$PlaceholderFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adFragment" />
+
+
+</RelativeLayout>

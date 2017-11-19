@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.autometer.myapp.autometer.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taxi Fare Predictor"
+            android:id="@+id/tvlabel12"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/abc_dropdownitem_icon_width"
+            android:textColorHighlight="@color/abc_search_url_text_pressed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="about"
+            android:id="@+id/Details"
+            android:textStyle="bold"
+            android:linksClickable="true"
+            android:autoLink="web|email"
+            android:layout_below="@+id/tvlabel12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</FrameLayout>

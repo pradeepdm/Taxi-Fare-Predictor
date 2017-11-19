@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="alert">#CC0000</color>
+    <color name="confirm">#00C5CD</color>
+    <color name="info">#00C5CD</color>
+    <color name="actnBar">#388E8E</color>
+    <color name="bck">#FFFF99</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>
